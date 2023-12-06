@@ -8,6 +8,13 @@
   flex-direction: column;
   gap: 3rem;
 }
+
+@media screen and (max-width:500px) {
+.App{
+  align-items: baseline;
+  text-align: center;
+}
+}
 body{
   margin: 0;
 }
@@ -16,8 +23,9 @@ body{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
-  height: 55%;
-  width: 50%;
+  max-height: 55%;
+  max-width: 50%;
+
 }
 
 .box{
